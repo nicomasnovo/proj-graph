@@ -1,0 +1,19 @@
+<h1>MOVIES GRAPHQL</h1>
+<table id="tab">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">time</th>
+      <th scope="col">rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of lis">
+      <td>{{ e["id"] }}</td>
+      <td>{{ e["name"] }}</td>
+      <td>{{ e["time"] }}</td>
+      <td>{{ e["rating"] }}</td>
+    </tr>
+  </tbody>
+</table>

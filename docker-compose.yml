@@ -5,9 +5,9 @@ services:
     ports:
       - '4000:4000'
     build:
-      context: .
+      context: ./server
     volumes:
-      - .:/usr/src/app
+      - ./server:/usr/src/app
     networks:
       - app
     depends_on:
@@ -20,6 +20,16 @@ services:
       - app
     volumes:
       - mongo-data:/data/db
+  client:
+    image: client
+    ports:
+      - '4200:4200'
+    build:
+      context: ./client
+    volumes:
+      - ./client:/usr/src/app
+    networks:
+      - app
 networks:
   app:
     driver: bridge

@@ -1,0 +1,24 @@
+<h1>MOVIES API</h1>
+<!-- <div>
+  <div role="status">
+    <span id="loading">Loading...</span>
+  </div>
+</div> -->
+<table id="tab">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">name</th>
+      <th scope="col">time</th>
+      <th scope="col">rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of lis">
+      <td>{{ e["_id"] }}</td>
+      <td>{{ e["name"] }}</td>
+      <td>{{ e["time"] }}</td>
+      <td>{{ e["rating"] }}</td>
+    </tr>
+  </tbody>
+</table>

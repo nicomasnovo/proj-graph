@@ -1,5 +1,6 @@
 build:
-	docker build -t server .
+	cd server && $(MAKE) build
+	cd client && $(MAKE) build
 
 run:
 	docker compose up

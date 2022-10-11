@@ -2,6 +2,8 @@
 
 ### 1) This project uses docker compose linked to your local files so you must first install all project dependencies:
 
+On both folders Client and Server as they are frontend and backend respectibly.
+
 ```
 npm install
 ```
@@ -19,3 +21,6 @@ make build
 ```
 make run
 ```
+
+Backend server: http://localhost:4000
+Frontend: http://localhost:4200

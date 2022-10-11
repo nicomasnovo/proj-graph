@@ -8,6 +8,7 @@ const addMovie = async (parent, args, { models }) => {
     rating,
   });
 };
+
 const updateMovie = async (parent, args, { models }) => {
   const { id, name, time, rating } = args;
   return await models.Movie.findOneAndUpdate(
