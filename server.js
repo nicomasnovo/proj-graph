@@ -1,6 +1,5 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
-// const { buildSchema } = require('graphql');
 const { ApolloServer } = require('apollo-server-express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -11,28 +10,8 @@ const movieRouter = require('./app/api/routes/movie-router');
 const db = require('./app/db');
 const models = require('./app/models');
 
-// var schema = buildSchema(`
-//   type Query {
-//     hello: String
-//   }
-// `);
-
-// var root = {
-//   hello: () => {
-//     return 'Hello world!';
-//   },
-// };
 //Express App
 const app = express();
-
-// app.use(
-//   '/graphql',
-//   graphqlHTTP({
-//     schema,
-//     rootValue: root,
-//     graphiql: true,
-//   })
-// );
 //Cors & bodyparser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
