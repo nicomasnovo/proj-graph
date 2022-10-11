@@ -5,7 +5,7 @@
 On both folders Client and Server as they are frontend and backend respectibly.
 
 ```
-npm install
+make install
 ```
 
 ## This project uses makefiles to make it easier to run
