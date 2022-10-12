@@ -1,5 +1,6 @@
 const Movie = require('../../models/movie.model');
 
+//DO REFACTOR DRY
 createMovie = (req, res) => {
   const body = req.body;
 
