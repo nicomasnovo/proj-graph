@@ -1,4 +1,5 @@
 # Express server with both API and Graphql for educational purposes only
+#Quick example done during a workshop taught by Nico Masnovo
 
 ### 1) This project uses docker compose linked to your local files so you must first install all project dependencies:
 
